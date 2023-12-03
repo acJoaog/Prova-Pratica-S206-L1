@@ -21,8 +21,8 @@ describe('Testando o site demoblaze', () => {
     cy.wait(2000)
     cy.get('#loginpassword').type('senha')
     cy.get('#loginusername').type(info[0])
+    cy.wait(2000)
     cy.get('#logInModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click()
-    //cy.get('#nameofuser').should('contain.text', 'Welcome asa')
   })
 
 })
