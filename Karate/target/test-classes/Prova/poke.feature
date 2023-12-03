@@ -1,4 +1,4 @@
-Feature: Testando API de Pokemon
+Feature: Testando API de Pokemon e GoRest
 
 Background: Executa antes de cada teste
     * def url_base = "https://pokeapi.co/api/v2/"
