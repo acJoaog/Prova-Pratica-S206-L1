@@ -33,3 +33,9 @@ Scenario: Testando o retorno de uma habilidade e verificando um pokemon que a po
     And match response.id == 130
     And match response.pokemon[10].pokemon.name == "dragapult"
     Then status 200
+
+Scenario: Criar um novo usuário usando POST
+    Given url 'https://gorest.co.in/public-api/users'
+    And request { name: 'NovoUser123', gender: 'Male', email: 'novo_usuario123@test.com', status: 'Active' }
+    When method post
+    Then status 200
