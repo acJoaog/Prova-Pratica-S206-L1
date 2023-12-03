@@ -1,5 +1,8 @@
 # Prova-Pratica-S206-L1
 
+## Integrantes:
+  - João Gabriel Azevedo de Carvalho - 258 - GES
+  - Lucas Mendes Ribeiro do Couto - 256 - GES
  ## Rodar specs por linha de comando
  ```bash
  ./node_modules/.bin/cypress run --spec 'Cypress/cypress/e2e/**/'
