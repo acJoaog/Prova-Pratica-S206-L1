@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"Prova\/poke[1:6]","start":1701635166477,"end":1701635167596,"title":"Prova\/poke[1:6] 17:26:06.477-17:26:07.596 Testando retorno invalido"},{"id":2,"group":1,"content":"Prova\/poke[2:12]","start":1701635167606,"end":1701635167761,"title":"Prova\/poke[2:12] 17:26:07.606-17:26:07.761 Testando retorno e verificando o JSON"},{"id":3,"group":1,"content":"Prova\/poke[3:20]","start":1701635167771,"end":1701635167866,"title":"Prova\/poke[3:20] 17:26:07.771-17:26:07.866 Testando retorno de um ataque e entrando em um dos elementos do array de pokemon que aprendem esse ataque"},{"id":4,"group":1,"content":"Prova\/poke[4:28]","start":1701635167871,"end":1701635168429,"title":"Prova\/poke[4:28] 17:26:07.871-17:26:08.429 Testando o retorno de uma habilidade e verificando um pokemon que a possua"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
