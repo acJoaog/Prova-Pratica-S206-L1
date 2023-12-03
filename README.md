@@ -6,11 +6,11 @@
  ```
 
  ## Visualizando os relatórios do cypress
- O arquivo do relatório do cypress está: 'Cypress/cypress/reports/html/index.html'
+ O arquivo do relatório do cypress está: 'Cypress/cypress/reports/html/index.html', basta abrí-lo no seu navegador
 
  ## Rodar Karate por linha de comando
  ```bash
  mvn test -Dtest=pokeRunner
  ```
  ## Visualizando relatorio gerado
- Para visualizar o relatorio abra o arquivo html do seguinte path "~\projeto_s206\target\karate-reports\Projeto.rickMorty.html".
+ Para visualizar o relatorio abra o arquivo html do seguinte path "~\Karate\target\karate-reports\Prova.poke.html" no seu navegador
