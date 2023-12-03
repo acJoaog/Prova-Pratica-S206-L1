@@ -14,6 +14,17 @@ describe('Testando o site demoblaze', () => {
     cy.get('#nameofuser').should('contain.text', 'Welcome asa')
   })
 
+  it('Testando Login com senha errada', () => {
+    let info = cadastro()
+    cy.visit('https://www.demoblaze.com/index.html')
+    cy.get('#login2').click()
+    cy.wait(2000)
+    cy.get('#loginpassword').type('senha')
+    cy.get('#loginusername').type(info[0])
+    cy.get('#logInModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click()
+    //cy.get('#nameofuser').should('contain.text', 'Welcome asa')
+  })
+
 })
 
 function cadastro(){
